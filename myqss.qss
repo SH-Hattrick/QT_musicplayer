@@ -1,0 +1,88 @@
+QPushButton{/*背景颜色*/
+        background:qlineargradient(spread:pad, x1:0.460227, y1:0, x2:0.465818, y2:0.875, stop:0 rgba(102, 0, 136,255), stop:1 rgba(204,187, 255, 255));
+        border-radius:8px;/*边框圆角半径*/
+        border:1px solid rgb(0, 170, 255);/*边界*/
+        color:rgb(255,255,255)/*字体颜色*/
+}
+
+QPushButton:hover{
+        background:qlineargradient(spread:pad, x1:0.460227, y1:0, x2:0.443091, y2:0.898, stop:0 rgba(0, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+        color:black
+}
+
+QPushButton:hover:pressed{
+        background:qlineargradient(spread:pad, x1:0.460227, y1:0, x2:0.465818, y2:0.875, stop:0 rgba(170, 255, 255, 255), stop:1 rgba(255, 255, 255, 255));
+}
+
+QListWidget{
+        color:black;
+        border:4px solid rgb(0,0,0);
+        /*background:qlineargradient(spread:pad, x1:0, y1:0.34, x2:0.867, y2:0.38, stop:0 rgba(170, 255, 255, 255), stop:1 rgba(230, 255, 255, 255));*/
+        background:rgb(238,220,255);
+        border-radius:16px;/*边框圆角半径*/
+}
+
+
+QSlider::groove:horizontal {
+border: 1px solid #4A708B;
+background: #C0C0C0;
+height: 5px;
+border-radius: 1px;
+padding-left:-1px;
+padding-right:-1px;
+}
+
+QSlider::sub-page:horizontal {
+background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+    stop:0 #B1B1B1, stop:1 #c4c4c4);
+background: qlineargradient(x1: 0, y1: 0.2, x2: 1, y2: 1,
+    stop: 0 #5DCCFF, stop: 1 #1874CD);
+border: 1px solid #4A708B;
+height: 10px;
+border-radius: 2px;
+}
+
+QSlider::add-page:horizontal {
+background: #575757;
+border: 0px solid #777;
+height: 10px;
+border-radius: 2px;
+}
+
+QSlider::handle:horizontal
+{
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5,
+    stop:0.6 #45ADED, stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.6 #2A8BDA,
+    stop:0.778409 rgba(255, 255, 255, 255));
+
+    width: 11px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border-radius: 5px;
+}
+
+QSlider::sub-page:horizontal:disabled {
+background: #00009C;
+border-color: #999;
+}
+
+QSlider::add-page:horizontal:disabled {
+background: #eee;
+border-color: #999;
+}
+
+QSlider::handle:horizontal:disabled {
+background: #eee;
+border: 1px solid #aaa;
+border-radius: 4px;
+}
+

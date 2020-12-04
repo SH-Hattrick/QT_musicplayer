@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QWidget" name="page">
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>60</y>
+         <width>720</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>510</y>
+         <width>800</width>
+         <height>3</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>600</x>
+         <y>520</y>
+         <width>3</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_4">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>0</y>
+         <width>3</width>
+         <height>600</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="listWidget_songlist">
+       <property name="geometry">
+        <rect>
+         <x>155</x>
+         <y>71</y>
+         <width>621</width>
+         <height>411</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>隶书</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_mylist">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>160</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>我的歌单</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_displayallmusic">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>220</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>查看所有歌曲</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_play">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>550</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>播放</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_lastsong">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>520</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>上一首</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_pause">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>550</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>暂停</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_nextsong">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>520</y>
+         <width>71</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>下一首</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_songtime">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>530</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>黑体</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>0:00/0:00</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSlider_volumn">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>550</y>
+         <width>161</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_playmode">
+       <property name="geometry">
+        <rect>
+         <x>680</x>
+         <y>520</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>顺序播放</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>610</x>
+         <y>530</y>
+         <width>51</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>黑体</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>音量</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_curpiece">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>490</y>
+         <width>621</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe Script</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Another day of Music! ^o^</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_deletesong">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>280</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>移除歌曲</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSlider_timebar">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>560</y>
+         <width>391</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
